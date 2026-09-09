@@ -6,19 +6,20 @@ import Products from './pages/Products/Products'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
+import NotFound from './pages/NotFound/NotFound'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <h1 className='text-3xl'>Hello World</h1>
       <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
