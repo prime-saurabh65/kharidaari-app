@@ -47,7 +47,7 @@ const HeroSection = () => {
   },
 ];
   return (
-    <div className='bg-gray-700'>
+    <div className='bg-gray-800'>
       <div className='mx-auto grid max-w-5xl grid-cols-4 gap-16 px-8 py-10 text-white'>
         
         {footerSections.map((section) => (

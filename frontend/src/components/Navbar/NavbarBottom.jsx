@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Menu } from 'lucide-react';
 
 const navLinks = [
   'Fresh',
@@ -26,7 +27,7 @@ const NavbarBottom = () => {
         type="button"
         className="flex items-center gap-1 font-bold whitespace-nowrap"
       >
-        <span className="text-xl">☰</span>
+        <span className="text-xl"> <Menu /> </span>
         <span>All</span>
       </button>
 
